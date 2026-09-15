@@ -127,13 +127,14 @@ h2{font-size:clamp(26px,3.8vw,42px);font-weight:800;line-height:1.1;letter-spaci
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,4vw,48px);align-items:center}
 .two > div{min-width:0}
 .team p{line-height:1.55}
+.team{display:block}
+.team > div{max-width:46ch}
 .team__lede{font-size:clamp(16px,1.9vw,19px);max-width:38ch;margin:18px 0 16px;text-wrap:pretty}
 .team__call{font-size:clamp(15px,1.8vw,17px);font-weight:700;max-width:36ch;margin-bottom:22px}
 .free{display:inline-flex;align-items:center;background:var(--sand);font-size:clamp(13px,1.5vw,15px);font-weight:700;padding:10px 16px;border-radius:999px}
 .ph{border-radius:18px;background-color:var(--mint);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.55) 0 10px,transparent 10px 20px);display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;aspect-ratio:5/4}
 .ph span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.6;color:var(--green-text);max-width:26ch}
-.ph--zine{aspect-ratio:3/2;max-width:340px;background-color:var(--green-deep);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.12) 0 10px,transparent 10px 20px);border-radius:16px}
-.ph--zine span{color:rgba(255,255,255,.85)}
+.zines{width:100%;max-width:340px;height:auto;border-radius:16px}
 
 /* form */
 .formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:clamp(26px,4vw,56px);align-items:start}
@@ -208,7 +209,7 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
 
       <ul class="gets">
         <li><span aria-hidden="true"></span><span>Hundreds of dollars every semester you're enrolled</span></li>
-        <li><span aria-hidden="true"></span><span>Grocery, gas, Target and campus food-court cards</span></li>
+        <li><span aria-hidden="true"></span><span>Grocery, gas and Target cards</span></li>
         <li><span aria-hidden="true"></span><span>Emergency cash when a car breaks or a tooth aches</span></li>
       </ul>
 
@@ -217,15 +218,15 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
         <a class="calllink" href="tel:+16196443932">Or call Sam: 619-644-3932</a>
       </div>
 
-      <p class="zine">Read this far and we'll mail you one of our mini zines — on courage, happiness, or making smart decisions. 28 pages, so not that mini. Free, no strings.</p>
+      <p class="zine">Read this far and we'll mail you one of our mini zines — on courage, happiness, or making smart decisions (28 larger pages, so not that mini). Free, no strings.</p>
 
-      <p class="elig">Eligible if you've been in foster care any time since your 13th birthday and you're under 26. Not sure? Ask us and we'll check for you.</p>
+      <p class="elig">Eligible if you've been in foster care any time since your 13th birthday and you're under 26. Or if you belonged to any other college's NextUp program. Not sure? Ask us and we'll check for you.</p>
     </div>
 
     <figure class="portrait">
       <img src="assets/images/image08.jpg" alt="Hector L., a NextUp student who transferred to SDSU, smiling on the Grossmont College campus" width="1024" height="1280">
       <figcaption>
-        <p>They made my anxiety go away. Well, not go away, but I feel it less.</p>
+        <p>They helped make my anxiety about college go away.</p>
         <cite>Hector L. — Business, transferred to SDSU</cite>
       </figcaption>
     </figure>
@@ -244,7 +245,6 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
     <ol class="checks">
       <li><p>Can you get money for books and life totaling into the hundreds of dollars every semester you're enrolled in courses?</p><span class="yes">Yes</span></li>
       <li><p>Can you get grocery store cards to help ensure you have food at home because, well, you've grown rather fond of eating?</p><span class="yes">Yes</span></li>
-      <li><p>Can you get a food voucher good for the college food court for every day you have a class on campus?</p><span class="yes">Yes</span></li>
       <li><p>Can you get bus and trolley support or gas cards to help save you money?</p><span class="yes">Yes</span></li>
       <li><p>Can you get emergency grant money because cars break, teeth ache, apartment managers demand hefty deposits, and, well, you get the idea?</p><span class="yes">Yes</span></li>
       <li><p>Can you get support to pay for prescription and over-the-counter medications at CVS?</p><span class="yes">Yes</span></li>
@@ -307,15 +307,12 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
 </section>
 
 <section id="team" class="band">
-  <div class="wrap wrap--mid two team">
+  <div class="wrap wrap--mid team">
     <div>
       <h2>Who you'll actually talk to</h2>
       <p class="team__lede">Our academic counselors have been supporting foster youth in college since before you were in kindergarten. That isn't a slogan — it's a résumé. You also get a financial aid specialist whose whole job is making sure your money shows up on time.</p>
       <p class="team__call">Call or text Sam Rigby at <a href="tel:+16196443932">619-644-3932</a>. A person answers.</p>
       <p class="free">Free. Always. Nothing to pay back.</p>
-    </div>
-    <div>
-      <div class="ph"><span>team photo — the NextUp counselors and specialists, faces and first names</span></div>
     </div>
   </div>
 </section>
@@ -326,7 +323,7 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
       <h2>Say hi. We'll do the rest.</h2>
       <p class="intro">Tell us where to mail your zine, and tell us what you need help with. We'll do everything we can to support your journey — getting into college, getting through it, and getting on to the next step.</p>
       <p class="altcall">Prefer to talk? Call or text Sam Rigby at <a href="tel:+16196443932">619-644-3932</a>.</p>
-      <div class="ph ph--zine"><span>photo — the mini zines, fanned out, 28 pages each</span></div>
+      <img class="zines" src="assets/images/zines.png" alt="Four NextUp mini zines on a wooden table: Who will you become? And how?, Be a burden…, Let's talk courage. Your courage., and Happiness Blooms." width="1122" height="1402">
     </div>
 
     <!-- TODO before launch: set action="" to your form endpoint (Tally, Formspree, etc). See NOTES.md. -->
