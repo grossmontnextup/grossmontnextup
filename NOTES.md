@@ -38,14 +38,24 @@ Domain is registered at Hover, with DNS delegated to Cloudflare.
 Open `index.html` on github.com, click the pencil icon, change the text, and
 commit. Live in about a minute. No tools to install.
 
+## The form
+
+Posts to **Formspree** at `https://formspree.io/f/mwlpebdw`. Cloudflare can't
+receive form submissions itself, and Tally has no endpoint for hand-coded HTML
+forms, so Formspree sits behind our own form markup — the page keeps its own
+design, labels and focus states.
+
+Sam gets an email per submission with all fields laid out; no dashboard login
+needed. Spam protection is a setting inside Formspree — keep it on. The free
+tier caps monthly submissions (roughly 50), so watch the count if outreach
+ramps up.
+
 ## Still to do
 
-1. **The form doesn't go anywhere yet.** `index.html` has
-   `action="REPLACE_WITH_FORM_ENDPOINT"`. Cloudflare Pages can't receive form
-   submissions on its own, so it needs a free third-party endpoint — Tally or
-   Formspree both work and both have free tiers. Paste the endpoint URL into
-   that `action` attribute and it works.
-2. **Two photos are placeholders** — the striped boxes in the "Who you'll
+1. **Student photos are placeholders.** The four faces in "Students speak" and
+   the hero are stand-ins until real student photos arrive. Names, quotes and
+   alt text are correct and should stay with their current files.
+2. **One photo placeholder remains** — the striped boxes in the "Who you'll
    actually talk to" section and the green form section. Drop real images in and
    replace the `<div class="ph">` blocks with `<img>` tags.
 3. **Verify the eligibility sentence** in the hero against the program's actual
