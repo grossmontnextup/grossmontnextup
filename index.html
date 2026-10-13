@@ -83,8 +83,9 @@ h1{margin:18px 0 20px;font-size:clamp(26px,4.6vw,54px);font-weight:800;line-heig
 .calllink:hover{color:var(--ink);border-bottom-color:var(--ink)}
 .zine{font-size:clamp(16px,1.9vw,19px);line-height:1.55;max-width:42ch;margin-bottom:16px}
 .elig{font-size:clamp(16px,1.9vw,19px);line-height:1.55;max-width:44ch;color:var(--ink-soft);border-left:3px solid var(--mint);padding-left:14px}
-.portrait{min-width:0;position:relative;display:flex}
-.portrait img{width:100%;height:100%;min-height:clamp(320px,52vw,660px);object-fit:cover;object-position:50% 30%;border-radius:18px;background:var(--mint)}
+.portrait{min-width:0;position:sticky;top:96px;align-self:start;display:flex}
+.portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:18px;background:var(--mint)}
+.portrait{position:sticky}
 .portrait figcaption{position:absolute;left:0;bottom:clamp(14px,2vw,26px);background:#fff;border-radius:14px;padding:16px 20px;max-width:min(85%,320px);box-shadow:0 10px 30px rgba(11,5,3,.15)}
 .portrait figcaption p{font-size:clamp(14px,1.6vw,16px);font-weight:600;font-style:italic;line-height:1.4;margin-bottom:7px;text-wrap:pretty}
 .portrait figcaption cite{font-size:12px;font-weight:700;color:var(--green-text);font-style:normal;letter-spacing:.02em}
@@ -185,7 +186,8 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
   .hero__col{display:contents}
   .pill{align-self:flex-start}
   .portrait{order:2;margin:22px 0 4px;display:block}
-  .portrait img{min-height:0;aspect-ratio:4/3;object-position:50% 22%}
+  .portrait{position:static}
+  .portrait img{aspect-ratio:4/3}
   .portrait figcaption{position:static;max-width:none;margin-top:10px;padding:0;box-shadow:none;border-radius:0}
   .hero__lower{order:3}
   .gets{margin:22px 0 24px}
@@ -242,13 +244,25 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
       </div>
     </div>
 
-    <figure class="portrait">
-      <img src="assets/images/antonio.jpg" alt="Antonio Winslow, a NextUp student, smiling outdoors" width="800" height="800">
+    <figure class="portrait" id="portrait">
+      <img src="assets/images/hero-antonio.jpg" alt="Antonio Winslow, a NextUp student, smiling outdoors" width="800" height="1000">
       <figcaption>
         <p>It encouraged me to keep going, stay focused, and never give up on my academic goals.</p>
         <cite>Antonio Winslow — Business Administration · CSU East Bay</cite>
       </figcaption>
     </figure>
+    <script>
+    (function(){
+      var s=[
+        {img:"hero-atlas.jpg",pos:"50% 50%",alt:"Atlas Blue Martinez with their cat on their shoulder",q:"The counselors and directors have provided invaluable advice and resources.",c:"Atlas Blue Martinez — Literature · UC Santa Cruz"},
+        {img:"hero-antonio.jpg",pos:"50% 20%",alt:"Antonio Winslow, smiling outdoors",q:"It encouraged me to keep going, stay focused, and never give up on my academic goals.",c:"Antonio Winslow — Business Administration · CSU East Bay"},
+        {img:"hero-kaitlyn.jpg",pos:"50% 0%",alt:"Kaitlyn J. Stowinsky leaning against a stone wall in a Cal State San Marcos sweatshirt, holding her graduation cap",q:"NextUp stood beside me when I couldn\u2019t stand alone.",c:"Kaitlyn J. Stowinsky — Molecular & Cellular Biology · Cal State San Marcos"}
+      ];
+      var p=s[Math.floor(Math.random()*s.length)],f=document.getElementById("portrait"),i=f.querySelector("img");
+      i.src="assets/images/"+p.img;i.alt=p.alt;i.style.objectPosition=p.pos;
+      f.querySelector("p").textContent=p.q;f.querySelector("cite").textContent=p.c;
+    })();
+    </script>
   </div>
 </section>
 
