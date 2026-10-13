@@ -81,8 +81,8 @@ h1{margin:18px 0 20px;font-size:clamp(26px,4.6vw,54px);font-weight:800;line-heig
 .ctarow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:18px}
 .calllink{font-size:clamp(14px,1.6vw,16px);font-weight:700;color:var(--green);text-decoration:none;border-bottom:2px solid rgba(0,104,94,.3);padding-bottom:2px}
 .calllink:hover{color:var(--ink);border-bottom-color:var(--ink)}
-.zine{font-size:clamp(14px,1.5vw,15px);line-height:1.5;max-width:42ch;margin-bottom:16px}
-.elig{font-size:13px;line-height:1.5;max-width:44ch;color:var(--ink-soft);border-left:3px solid var(--mint);padding-left:12px}
+.zine{font-size:clamp(16px,1.9vw,19px);line-height:1.55;max-width:42ch;margin-bottom:16px}
+.elig{font-size:clamp(16px,1.9vw,19px);line-height:1.55;max-width:44ch;color:var(--ink-soft);border-left:3px solid var(--mint);padding-left:14px}
 .portrait{min-width:0;position:relative;display:flex}
 .portrait img{width:100%;height:100%;min-height:clamp(320px,52vw,660px);object-fit:cover;object-position:50% 30%;border-radius:18px;background:var(--mint)}
 .portrait figcaption{position:absolute;left:0;bottom:clamp(14px,2vw,26px);background:#fff;border-radius:14px;padding:16px 20px;max-width:min(85%,320px);box-shadow:0 10px 30px rgba(11,5,3,.15)}
@@ -118,7 +118,7 @@ h2{font-size:clamp(26px,3.8vw,42px);font-weight:800;line-height:1.1;letter-spaci
 .shead p{font-size:clamp(15px,1.8vw,18px);font-weight:500;line-height:1.5;color:#2A2320}
 .tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(18px,3vw,30px)}
 .tcard{background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.tcard img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--mint)}
+.tcard img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--mint)}
 .tcard__body{padding:clamp(16px,2.2vw,22px);display:flex;flex-direction:column;gap:10px;flex:1}
 .tcard blockquote{font-size:clamp(15px,1.7vw,17px);font-weight:600;font-style:italic;line-height:1.45;text-wrap:pretty}
 .tcard cite{margin-top:auto;font-size:13px;font-weight:700;line-height:1.4;font-style:normal}
@@ -243,10 +243,10 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
     </div>
 
     <figure class="portrait">
-      <img src="assets/images/image08.jpg" alt="Hector L., a NextUp student who transferred to SDSU, smiling on the Grossmont College campus" width="1024" height="1280">
+      <img src="assets/images/antonio.jpg" alt="Antonio Winslow, a NextUp student, smiling outdoors" width="800" height="800">
       <figcaption>
-        <p>They helped make my anxiety about college go away.</p>
-        <cite>Hector L. — Business, transferred to SDSU</cite>
+        <p>It encouraged me to keep going, stay focused, and never give up on my academic goals.</p>
+        <cite>Antonio Winslow — Business Administration · CSU East Bay</cite>
       </figcaption>
     </figure>
   </div>
@@ -286,39 +286,39 @@ footer{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(90px,10vw,48px)}
   <div class="wrap wrap--testimonials">
     <div class="shead">
       <h2>Students speak</h2>
-      <p>Four people who were sitting exactly where you are.</p>
+      <p>People who were sitting exactly where you are.</p>
     </div>
 
     <div class="tgrid">
+      <article class="tcard">
+        <img src="assets/images/atlas.jpg" alt="Atlas Blue Martinez with their cat on their shoulder" width="800" height="800">
+        <div class="tcard__body">
+          <blockquote>NextUp has been an amazing source of support for me during my time in college. The counselors and directors have provided invaluable advice and resources.</blockquote>
+          <cite>Atlas Blue Martinez<span>Literature · UC Santa Cruz</span></cite>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <img src="assets/images/antonio.jpg" alt="Antonio Winslow, smiling outdoors" width="800" height="800">
+        <div class="tcard__body">
+          <blockquote>NextUp has been a great support system for me. It encouraged me to keep going, stay focused, and never give up on my academic goals.</blockquote>
+          <cite>Antonio Winslow<span>Business Administration · CSU East Bay</span></cite>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <img src="assets/images/kaitlyn.jpg" alt="Kaitlyn J. Stowinsky leaning against a stone wall in a Cal State San Marcos sweatshirt, holding her graduation cap" width="800" height="800">
+        <div class="tcard__body">
+          <blockquote>NextUp stood beside me when I couldn’t stand alone. Their support transformed my hardship into strength, belief into achievement, and stands as proof of my resilience and educational growth.</blockquote>
+          <cite>Kaitlyn J. Stowinsky<span>Molecular &amp; Cellular Biology · Cal State San Marcos</span></cite>
+        </div>
+      </article>
+
       <article class="tcard">
         <img src="assets/images/image05.jpg" alt="Dante C., smiling outdoors on campus" width="800" height="800">
         <div class="tcard__body">
           <blockquote>The support was awesome, bro. I'm so grateful. Wouldn't have landed at SDSU without you.</blockquote>
           <cite>Dante C.<span>Biology, transferred to SDSU</span></cite>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <img src="assets/images/image07.jpg" alt="Sarah S., smiling outdoors on campus" width="800" height="800">
-        <div class="tcard__body">
-          <blockquote>Ava helped me apply, helped me figure out financial aid and introduced me to Marissa at ILS.</blockquote>
-          <cite>Sarah S.<span>Sociology, transferred to Cal State San Marcos</span></cite>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <img src="assets/images/image06.jpg" alt="Jessica M., smiling outdoors on campus" width="800" height="800">
-        <div class="tcard__body">
-          <blockquote>It took two colleges and five years to transfer. It wasn't until I got to Grossmont that I got the support I needed.</blockquote>
-          <cite>Jessica M.<span>Business, transferred to SDSU</span></cite>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <img src="assets/images/image08.jpg" alt="Hector L., smiling outdoors on campus" width="800" height="800">
-        <div class="tcard__body">
-          <blockquote>I like the whole program. The Midweeks, the counseling. They made my anxiety go away. Well, not go away, but I feel it less.</blockquote>
-          <cite>Hector L.<span>Business, transferred to SDSU</span></cite>
         </div>
       </article>
     </div>
